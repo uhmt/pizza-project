@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Pizza Mediana</h1>
+    <p>Disfruta de nuestra irresistible Pizza Mediana: masa artesanal, salsa de tomate fresco y queso derretido, todo combinado con tus 
+        ingredientes favoritos. Perfecta para compartir o disfrutar solo, nuestra Pizza Mediana es una experiencia culinaria que te dejará
+         anhelando más. ¡Haz tu pedido ahora y déjate seducir por su delicioso sabor!
+
+    <img src="/img/pizza-3000285_1280.png" alt="">
+
+    <form action="/Producs/orderList.py " method="post">
+        <label for="tipoPizza">Tipo de pizza</label>
+
+        <select name="tipoPizza" id="tipoPizza">
+            <option value="pepperoni">Pepperoni</option>
+            <option value="mozzarella">Mozzarella</option>
+            <option value="jamon">Jamon</option>
+        </select> 
+        <br>
+        <br>
+        <label for="Cantidad">Cantidad</label>
+        <input type="number" name="Cantidad" min="1" value="1" required>
+        <br>
+        <br>
+        <label for="description">Preferecia</label>
+        <textarea id="description" cols="30" rows="10"></textarea>
+        <br>
+        <br>
+        <button type="submit">Agregar al Carrito</button>
+
+    </form>
+</body>
+</html>

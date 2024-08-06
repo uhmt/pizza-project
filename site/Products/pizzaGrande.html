@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Pizza Simple</h1>
+    <p>Disfruta de nuestra deliciosa Pizza Simple, una combinación perfecta de masa crujiente, salsa de tomate fresca y queso derretido.
+         Esta clásica pizza es ideal para los amantes de la simplicidad, ofreciendo un sabor auténtico que te hará volver por más.
+          Perfecta para satisfacer esos antojos de pizza en cualquier momento del día.
+
+    <img src="/img/pizza-3000285_1280.png" alt="">
+
+    <form action="/Producs/orderList.py " method="post">
+        <label for="tipoPizza">Tipo de pizza</label>
+
+        <select name="tipoPizza" id="tipoPizza">
+            <option value="pepperoni">Pepperoni</option>
+            <option value="mozzarella">Mozzarella</option>
+            <option value="jamon">Jamon</option>
+        </select> 
+        <br>
+        <br>
+        <label for="Cantidad">Cantidad</label>
+        <input type="number" name="Cantidad" min="1" value="1" required>
+        <br>
+        <br>
+        <label for="description">Preferecia</label>
+        <textarea id="description" cols="30" rows="10"></textarea>
+        <br>
+        <br>
+        <button type="submit">Agregar al Carrito</button>
+
+    </form>
+</body>
+</html>

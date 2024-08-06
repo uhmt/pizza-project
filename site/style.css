@@ -1,0 +1,106 @@
+/* Body y fondo */
+body {
+    background-color: #1a1a1a;
+    color: #ffffff;
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+/* Encabezado principal */
+header h1 {
+    font-size: 2.5rem;
+    color: #ff6600;
+    text-shadow: 2px 2px #000000;
+}
+
+/* Estilo del contenedor del menú */
+.menu-container {
+    text-align: center;
+    margin: 20px auto; /* Asegura que esté centrado y con un margen */
+}
+
+/* Estilo del título del menú */
+.menu-title {
+    font-size: 2rem;
+    color: #ff6600;
+    margin-bottom: 20px; /* Separa el título del contenido del menú */
+    text-shadow: 1px 1px #000000;
+}
+
+/* Estilo de las secciones del menú */
+#menu {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-top: 20px; /* Asegura separación del título */
+}
+
+/* Estilo de las columnas del menú */
+.col {
+    width: 48%;
+    margin-bottom: 20px;
+}
+
+/* Estilo de las secciones de cada columna */
+#menu section {
+    background-color: #333333;
+    border-radius: 10px;
+    padding: 15px;
+    margin: 10px;
+}
+
+/* Títulos de cada categoría de comida */
+#menu section h2 {
+    color: #ff6600;
+    text-shadow: 1px 1px #000000;
+    margin-bottom: 10px;
+}
+
+/* Lista de items de cada categoría */
+#menu ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+#menu ul li {
+    background-color: #555555;
+    margin: 5px 0;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+/* Estilo de los enlaces de los items */
+#menu ul li a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+#menu ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Imagen de la pizza */
+img {
+    display: block;
+    margin: 20px auto;
+    max-width: 300px;
+}
+
+/* Animación de rebote para el encabezado principal */
+@keyframes bounce {
+    0%, 20%, 50%, 80%, 100% {
+        transform: translateY(0);
+    }
+    40% {
+        transform: translateY(-30px);
+    }
+    60% {
+        transform: translateY(-15px);
+    }
+}
+
+.bounce {
+    animation: bounce 2s infinite;
+}
